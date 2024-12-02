@@ -1,0 +1,23 @@
+﻿################################################################################
+# Este arquivo .gitignore foi criado automaticamente pelo Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/DesafioBookStore-Back/config
+/.vs/DesafioBookStore-Back/DesignTimeBuild
+/.vs/DesafioBookStore-Back/FileContentIndex
+/.vs/DesafioBookStore-Back/v17
+/.vs/ProjectEvaluation
+/src/DesafioBookStore-Back.Application/bin/Debug/net8.0
+/src/DesafioBookStore-Back.Application/obj
+/src/DesafioBookStore-Back.Domain/bin/Debug/net8.0
+/src/DesafioBookStore-Back.Domain/obj
+/src/DesafioBookStore-Back.Infrastructure/bin/Debug/net8.0
+/src/DesafioBookStore-Back.Infrastructure/obj
+/src/DesafioBookStore-Back.IoC/bin/Debug/net8.0
+/src/DesafioBookStore-Back.IoC/obj
+/src/DesafioBookStore-Back.Presentation/bin/Debug/net8.0
+/src/DesafioBookStore-Back.Presentation/obj
+/tests/DesafioBookStore-Back.IntegrationTests/bin/Debug/net8.0
+/tests/DesafioBookStore-Back.IntegrationTests/obj
+/tests/DesafioBookStore-Back.UnitTests/bin/Debug/net8.0
+/tests/DesafioBookStore-Back.UnitTests/obj
