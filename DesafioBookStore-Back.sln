@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35208.52
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesafioBookStore-Back.Presentation", "src\DesafioBookStore-Back.Presentation\DesafioBookStore-Back.Presentation.csproj", "{26E46506-9705-442E-A891-5C0D9DCFD13F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesafioBookStore-Back.Application", "src\DesafioBookStore-Back.Application\DesafioBookStore-Back.Application.csproj", "{0D260075-836F-443A-A943-20D1087394CB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesafioBookStore-Back.Domain", "src\DesafioBookStore-Back.Domain\DesafioBookStore-Back.Domain.csproj", "{6EC1B106-D973-4F3A-9A61-3D265D7AEAF5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesafioBookStore-Back.Infrastructure", "src\DesafioBookStore-Back.Infrastructure\DesafioBookStore-Back.Infrastructure.csproj", "{69699A2A-2B2F-4965-807E-7F99325536B9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7DE755AF-6389-46D9-940C-7AD4276ED123}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{CE6AEFCC-50B4-426F-8364-5005C2634C49}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution-itens", "solution-itens", "{45353513-32BC-49FB-BCAC-D2E01A7C45FE}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesafioBookStore-Back.UnitTests", "tests\DesafioBookStore-Back.UnitTests\DesafioBookStore-Back.UnitTests.csproj", "{55EBD8CF-AE9B-4244-9193-C24AD980D5A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesafioBookStore-Back.IntegrationTests", "tests\DesafioBookStore-Back.IntegrationTests\DesafioBookStore-Back.IntegrationTests.csproj", "{9A6E6C6D-93CA-4B24-A29F-443C52A1A7AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesafioBookStore-Back.IoC", "src\DesafioBookStore-Back.IoC\DesafioBookStore-Back.IoC.csproj", "{C2689D61-F035-4D14-9D9E-0CDDBCFFB9FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26E46506-9705-442E-A891-5C0D9DCFD13F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26E46506-9705-442E-A891-5C0D9DCFD13F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26E46506-9705-442E-A891-5C0D9DCFD13F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26E46506-9705-442E-A891-5C0D9DCFD13F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D260075-836F-443A-A943-20D1087394CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D260075-836F-443A-A943-20D1087394CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D260075-836F-443A-A943-20D1087394CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D260075-836F-443A-A943-20D1087394CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EC1B106-D973-4F3A-9A61-3D265D7AEAF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EC1B106-D973-4F3A-9A61-3D265D7AEAF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EC1B106-D973-4F3A-9A61-3D265D7AEAF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EC1B106-D973-4F3A-9A61-3D265D7AEAF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69699A2A-2B2F-4965-807E-7F99325536B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69699A2A-2B2F-4965-807E-7F99325536B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69699A2A-2B2F-4965-807E-7F99325536B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69699A2A-2B2F-4965-807E-7F99325536B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55EBD8CF-AE9B-4244-9193-C24AD980D5A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55EBD8CF-AE9B-4244-9193-C24AD980D5A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55EBD8CF-AE9B-4244-9193-C24AD980D5A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55EBD8CF-AE9B-4244-9193-C24AD980D5A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A6E6C6D-93CA-4B24-A29F-443C52A1A7AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A6E6C6D-93CA-4B24-A29F-443C52A1A7AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A6E6C6D-93CA-4B24-A29F-443C52A1A7AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A6E6C6D-93CA-4B24-A29F-443C52A1A7AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2689D61-F035-4D14-9D9E-0CDDBCFFB9FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2689D61-F035-4D14-9D9E-0CDDBCFFB9FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2689D61-F035-4D14-9D9E-0CDDBCFFB9FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2689D61-F035-4D14-9D9E-0CDDBCFFB9FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{26E46506-9705-442E-A891-5C0D9DCFD13F} = {7DE755AF-6389-46D9-940C-7AD4276ED123}
+		{0D260075-836F-443A-A943-20D1087394CB} = {7DE755AF-6389-46D9-940C-7AD4276ED123}
+		{6EC1B106-D973-4F3A-9A61-3D265D7AEAF5} = {7DE755AF-6389-46D9-940C-7AD4276ED123}
+		{69699A2A-2B2F-4965-807E-7F99325536B9} = {7DE755AF-6389-46D9-940C-7AD4276ED123}
+		{55EBD8CF-AE9B-4244-9193-C24AD980D5A0} = {CE6AEFCC-50B4-426F-8364-5005C2634C49}
+		{9A6E6C6D-93CA-4B24-A29F-443C52A1A7AD} = {CE6AEFCC-50B4-426F-8364-5005C2634C49}
+		{C2689D61-F035-4D14-9D9E-0CDDBCFFB9FE} = {7DE755AF-6389-46D9-940C-7AD4276ED123}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {61D6C611-2428-4BD4-B006-235F0E9B8979}
+	EndGlobalSection
+EndGlobal

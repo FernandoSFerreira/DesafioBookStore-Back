@@ -1,0 +1,6 @@
+@DesafioBookStore_Back.Presentation_HostAddress = http://localhost:5230
+
+GET {{DesafioBookStore_Back.Presentation_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

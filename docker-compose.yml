@@ -1,0 +1,54 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: bookstore_postgres
+    restart: always
+    environment:
+      POSTGRES_DB: bookstoredb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: yourpassword
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  mongo:
+    image: mongo:6
+    container_name: bookstore_mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: mongo
+      MONGO_INITDB_ROOT_PASSWORD: yourpassword
+    volumes:
+      - mongo_data:/data/db
+    ports:
+      - "27017:27017"
+
+  api:
+    image: bookstore_api
+    container_name: bookstore_api
+    build:
+      context: .
+      dockerfile: src/DesafioBookStore-Back.Presentation/Dockerfile
+    depends_on:
+      - postgres
+      - mongo
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      ConnectionStrings__PostgreSqlConnection: "Host=postgres;Database=bookstoredb;Username=postgres;Password=yourpassword"
+      MongoDbSettings__ConnectionString: "mongodb://mongo:yourpassword@mongo:27017"
+      MongoDbSettings__DatabaseName: "BookStoreDb"
+    ports:
+      - "8080:8080"
+    networks:
+      - bookstore_network
+
+volumes:
+  postgres_data:
+  mongo_data:
+
+networks:
+  bookstore_network:
+    driver: bridge
